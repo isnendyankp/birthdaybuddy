@@ -4,7 +4,7 @@ import Person from './Person';
 const List = ({ people }) => {
   return <section>
     {people.map((person)=>{
-      return <Person />;
+      return <Person key={person.id} />;
     })}
   </section>;
 };
@@ -17,3 +17,4 @@ export default List
 // - iterate over people.map
 // - add value person
 // - add return & import Person
+// - Setup key with pass value person.id
