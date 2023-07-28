@@ -2,7 +2,7 @@ import React from 'react'
 
 const List = ({ people }) => {
   return <section>
-    {people.map(())}
+    {people.map((person)=>)}
   </section>;
 };
 
@@ -12,3 +12,4 @@ export default List
 // - cr8 base render List
 // - accessing people prop
 // - iterate over people.map
+// - add value person
