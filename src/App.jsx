@@ -7,7 +7,7 @@ const App = () => {
   return <main>
     <section className="container">
       <h3>{people.length} birthday today</h3>
-      <List />
+      <List people={people}/>
     </section>
   </main>
 };
@@ -21,4 +21,5 @@ export default App;
 // - remove log & base structure
 // - update structure with add section container & pass in people.length
 // - import list 
+// - pass people prop with equal people state value
 
