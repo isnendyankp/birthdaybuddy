@@ -10,7 +10,11 @@ const App = () => {
         <h3>{people.length} birthday today</h3>
         <List people={people} />
       </section>
-      <button>
+      <button
+        type="button"
+        className="btn btn-block"
+        onClick={() => setPeople([])}
+      >
         clear all
       </button>
     </main>
@@ -28,4 +32,5 @@ export default App;
 // - import list 
 // - pass people prop with equal people state value
 // - cr8 base structure clear list with button
+// - pass setPeople to onclick event
 
