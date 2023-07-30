@@ -2,8 +2,8 @@ import React from 'react'
 
 const Person = ({ image, name, age }) => {
   return (
-    <article>
-      <img />
+    <article className="person">
+      <img src={image} alt={name} className="img" />
       <div>
         <h4>name</h4>
         <p>age</p>
@@ -18,3 +18,4 @@ export default Person
 // - cr8 base Person
 // - add 3 parameter for render person
 // - Add base article with structure img, name & age
+// - Add classname person & pass img paramter to img structure
