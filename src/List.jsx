@@ -1,15 +1,17 @@
-import React from 'react'
+import React from 'react';
 import Person from './Person';
 
 const List = ({ people }) => {
-  return <section>
-    {people.map((person)=>{
-      return <Person key={person.id} {...person} />;
-    })}
-  </section>;
+  return (
+    <section>
+      {people.map((person) => {
+        return <Person key={person.id} {...person} />;
+      })}
+    </section>
+  );
 };
 
-export default List
+export default List;
 
 // progress:
 // - cr8 base render List
@@ -19,3 +21,4 @@ export default List
 // - add return & import Person
 // - Setup key with pass value person.id
 // - fix setup key with add spread out all properties
+// - fix code double check on list
