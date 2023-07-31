@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Person = ({ image, name, age }) => {
   return (
     <article className="person">
@@ -11,8 +9,7 @@ const Person = ({ image, name, age }) => {
     </article>
   );
 };
-
-export default Person
+export default Person;
 
 // progress:
 // - cr8 base Person
